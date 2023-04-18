@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center my-5">
+    <div class="col-md-5">
+        <h1>Page Not Found</h1>
+        <p>Are you sure of the url? Kindly check! &#128524</p>
+        <a href="{% url 'home' %}" class="btn btn-secondary">Return to the Homepage</a>
+    </div>
+</div>
+{% endblock %}
