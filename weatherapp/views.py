@@ -7,7 +7,7 @@ from datetime import datetime
 def home(request):
     try:
         if request.method == 'POST':
-            API_KEY = 'f4be886bfe7151582dd3c7c639ad0546'
+            API_KEY = ''
             city_name = request.POST.get('city')
             url = f'https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={API_KEY}&units=metric/'
             #url = f'https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={API_KEY}'
